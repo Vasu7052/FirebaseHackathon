@@ -24,17 +24,14 @@ public class UsersActivity extends AppCompatActivity {
 
 
     ListView usersList;
-    TextView noUsersText;
 
-    DatabaseReference databaseUsers , updateUsers ;
+    DatabaseReference databaseUsers  ;
 
     ArrayList<UserDetails> usersList1 ;
 
     SharedPreferences shared ;
 
     String UserId ;
-
-    DatabaseReference onlineUpdate ;
 
     boolean flag = true ;
 
@@ -49,7 +46,6 @@ public class UsersActivity extends AppCompatActivity {
 
         UserId = shared.getString("UserId" , "") ;
 
-       // updateUsers = FirebaseDatabase.getInstance().getReference("UsersLastMessage");
         databaseUsers = FirebaseDatabase.getInstance().getReference("Users");
 
         usersList = (ListView)findViewById(R.id.listViewUsers);

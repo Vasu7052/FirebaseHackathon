@@ -138,8 +138,6 @@ public class ChatActivity extends AppCompatActivity {
         });
 
         setUpEmojiPopup();
-
-
     }
 
     @Override
