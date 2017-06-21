@@ -203,22 +203,6 @@ public class ChatActivity extends AppCompatActivity {
 
                 }
 
-              /*  userUpdate.child(child1).child("name").setValue(senderName);
-                userUpdate.child(child1).child("chatWithUserId").setValue(chatWithUserId);
-                userUpdate.child(child1).child("chatWith").setValue(chatWith);
-                userUpdate.child(child1).child("last_message").setValue(last_message);
-                userUpdate.child(child1).child("last_message_date").setValue(last_message_date);
-                userUpdate.child(child1).child("last_message_send_status").setValue(last_message_send_status);
-                userUpdate.child(child1).child("last_message_user").setValue(last_message_user);
-
-                userUpdate.child(child2).child("name").setValue(chatWith);
-                userUpdate.child(child2).child("chatWithUserId").setValue(userId);
-                userUpdate.child(child2).child("chatWith").setValue(senderName);
-                userUpdate.child(child2).child("last_message").setValue(last_message);
-                userUpdate.child(child2).child("last_message_date").setValue(last_message_date);
-                userUpdate.child(child2).child("last_message_send_status").setValue(last_message_send_status);
-                userUpdate.child(child2).child("last_message_user").setValue(last_message_user);    */
-
                 adapter = new CustomAdapterForChat(ChatActivity.this , R.layout.chat_user_receive_item, chatList );
                 chatListView.setAdapter(adapter);
                 scrollMyListViewToBottom();
